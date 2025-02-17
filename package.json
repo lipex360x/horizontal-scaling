@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "start": "bun server.ts"
+  },
+  "dependencies": {
+    "hono": "^4.7.1"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.2.2"
+  }
+}

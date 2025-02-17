@@ -1,0 +1,17 @@
+name: proxy
+
+services:
+  server:
+    build: 
+      context: .
+    image: bun_server:latest
+    deploy:
+      replicas: 6
+
+  nginx:
+    build:
+      context: ./proxy
+    ports:
+      - 8000:80
+    depends_on:
+      - server
